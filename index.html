@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogoForge - Free Business Logo Generator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <i class="fa-solid fa-pen-ruler"></i>
+        <span>LogoForge</span>
+    </div>
+
+    <nav>
+        <a href="#">Features</a>
+        <a href="#">Gallery</a>
+        <a href="#">GitHub</a>
+    </nav>
+
+    <button class="primary-btn">
+        Get Started
+    </button>
+
+</header>
+
+<section class="hero">
+
+    <h1>Design Beautiful Logos<br>In Seconds</h1>
+
+    <p>
+        Create professional logos for startups, businesses and personal brands.
+        Generate multiple logo concepts instantly and customize them to match your brand.
+    </p>
+
+    <div class="generator-layout">
+
+        <!-- LEFT SIDE -->
+        <div class="generator-box">
+
+            <div class="input-group">
+                <label for="businessName">Business Name</label>
+                <input
+                    type="text"
+                    id="businessName"
+                    placeholder="Example: Nova Cafe">
+            </div>
+
+            <div class="input-group">
+                <label for="tagline">Tagline</label>
+                <input
+                    type="text"
+                    id="tagline"
+                    placeholder="Example: Fresh Coffee Everyday">
+            </div>
+
+            <div class="input-group">
+                <label for="industry">Industry</label>
+
+                <select id="industry">
+                    <option>Technology</option>
+                    <option>Restaurant</option>
+                    <option>Education</option>
+                    <option>Healthcare</option>
+                    <option>Finance</option>
+                    <option>Fashion</option>
+                    <option>Fitness</option>
+                    <option>Real Estate</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="style">Logo Style</label>
+
+                <select id="style">
+                    <option>Minimal</option>
+                    <option>Modern</option>
+                    <option>Bold</option>
+                    <option>Luxury</option>
+                    <option>Creative</option>
+                </select>
+            </div>
+
+            <button id="generateBtn">
+                Generate Logos
+            </button>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="preview-box">
+
+            <h3>Live Preview</h3>
+
+            <div class="live-logo">
+
+                <div class="preview-icon">
+    <i id="previewIcon" class="fa-solid fa-pen-ruler"></i>
+                </div>
+
+                <h2 id="previewName">Your Business</h2>
+
+                <p id="previewTagline">
+                    Your Tagline
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="preview">
+
+    <h2>Generated Logos</h2>
+
+    <div id="logoContainer" class="logo-grid"></div>
+
+    <div class="selected-logo">
+
+        <h2>Selected Logo</h2>
+
+        <div id="selectedPreview" class="live-logo">
+
+            <div class="preview-icon">
+                <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+
+            <h2>Your Business</h2>
+
+            <p>Your Tagline</p>
+
+        </div>
+
+       <div class="download-buttons">
+
+    <button id="downloadPNG">
+        Download PNG
+    </button>
+
+    <button id="downloadSVG">
+        Download SVG
+    </button>
+
+</div>
+
+    </div>
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
